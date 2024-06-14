@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Welcome Page</title>
+    <!-- تضمين Bootstrap CSS -->
+    
+    <style>
+       
+body {
+    background-image: url('mo.quiz.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* ضمان أن تغطي الصفحة كاملة */
+    margin: 0;
+}
+/* تنسيق العنوان */
+h1 {
+    background: linear-gradient(90deg,#00ffff,#ff00e3);
+-webkit-background-clip: text;
+
+background-clip: text;
+
+-webkit-text-fill-color: transparent;
+    
+    font-size: 2.5em; /* تغيير حجم الخط */
+   position: relative;
+   top: -30px;
+}
+/* تنسيق المدخل */
+input[type="text"] {
+    padding: 10px; /* إضافة حشوة داخلية */
+    font-size: 1.2em; /* تغيير حجم الخط */
+    position: relative; 
+    top: -50px; 
+    left: -15px;
+    /* إضافة مسافة فوق وتحت المدخل */
+    border-radius: 5px; /* إضافة زوايا مستديرة */
+    border: 1px solid #bd0707da; /* إضافة حدود خفيفة */
+    width:450px; /* تحديد عرض المدخل */
+    text-align: center; /* تمركز النص في المدخل */
+}
+
+/* تنسيق الزر */
+button {
+   
+    background-color: rgba(30, 236, 236, 0.568); /* تغيير لون النص إلى الأبيض */
+    font-size: 1.2em; /* تغيير حجم الخط */
+    padding: 10px 20px; /* إضافة حشوة داخلية */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* إضافة زوايا مستديرة */
+    cursor: pointer; /* تغيير المؤشر عند تمرير الفأرة */
+    position: relative;
+    top:-20px;
+    color: white;
+    right: -130px ;
+
+    width: 150px;
+  
+}
+/* تنسيق الزر عند تمرير الفأرة */
+button:hover {
+   background-color: #00ffff;
+    
+    
+     }
+     .logo{
+          width:200px ;
+          height:outo; 
+          position: relative;
+          right: -700px;
+          bottom: -220px;
+        }
+            </style>
+             <script>
+                function validateInput() {
+                    var inputElement = document.getElementById("nameInput");
+                    var input = inputElement.value.trim();
+        
+                    if (input === "") {
+                        alert("Please enter your name");
+                        return;
+                    }
+        
+                    if (input === "Mostafa*1234") {
+                        window.location.href = "contact.html";
+                    } else {
+                        window.location.href = "services.html";
+                    }
+                }
+            </script>
+</head>
+<body class="d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+
+    <div class="container text-center">
+        <h1> Welcome, good luck</h1>
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <input type="text" id="nameInput" class="form-control" placeholder="Enter your name">
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <button class="btn btn-primary btn-block" onclick="validateInput()">Login</button>
+            </div>
+        </div>
+        <img src="mostafa.PNG" alt="logo" class="logo">
+    </div>
+
+    
+    <!-- تضمين مكتبة jQuery وBootstrap JavaScript -->
+  
+      
+</body>
+
+</html>
+
+
+
+
+
+

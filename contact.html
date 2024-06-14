@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Mostafa Alanani</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <div id="quiz-container" class="container">
+        <div id="quiz" class="text-white"></div>
+        <button id="next-btn" class="btn btn-primary mt-3 d-none">Next Question</button>
+         <button id="start-quiz-btn" class="btn btn-primary mt-3 d-none">Start Quiz</button>
+        <button id="clear-quiz-btn" class="btn btn-primary mt-3 d-none">Clear All Questions</button>
+        <form id="add-question-form" class="mt-3">
+            <input type="text" id="new-question" class="form-control mb-2" placeholder="Enter your question" required>
+            <input type="text" id="new-answer-a" class="form-control mb-2" placeholder="Answer A" required>
+            <input type="text" id="new-answer-b" class="form-control mb-2" placeholder="Answer B" required>
+            <input type="text" id="new-answer-c" class="form-control mb-2" placeholder="Answer C" required>
+            <input type="text" id="new-answer-d" class="form-control mb-2" placeholder="Answer D" required>
+            <input type="text" id="new-correct-answer" class="form-control mb-2" placeholder="Correct answer (a, b, c, or d)" required>
+            <button type="submit" class="btn btn-success">Add Question</button>
+            <button onclick="goBack()">Back</button>
+
+        </form>
+    </div>
+  <img src="mostafa.PNG" alt="logo" class="logo">
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
